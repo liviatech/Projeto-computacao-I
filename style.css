@@ -1,3 +1,23 @@
+:root{
+
+    --cor1: #E8D4F7;
+    --cor2:#700CBC;
+    --cor3:#cfdb247c;
+    --cor4:#EA202C;
+    --cor5:#34090C;
+ }
+ 
+ @font-face {
+    font-family: 'bouncy' ;
+src: url('bouncy.otf') format(opentype);
+}
+body {
+background-color: var(--cor3);
+
+
+}
+
+
 /* css reset */ 
 *, *:before, *:after {
     margin: 0;
@@ -22,11 +42,51 @@ a.links {
     position: relative;
 }
 
+.caixa-texto {
+ 
+    background-color:antiquewhite;
+border: 1px solid #34090C; /* Borda sólida de 2 pixels na cor preta */
+padding-left: 200px; /* Preenchimento interno  */
+padding-top: 20px;
+padding-bottom: 10px;
+padding-right: 200px;
+width:max-content; /* Ajusta a largura da caixa conforme o conteúdo */
+height: 100px;
+}
+
+
+         /* Definindo cores para cada letra */
+.colorir-titulo span:nth-child(1) { color: #111AF7;}
+.colorir-titulo span:nth-child(2) { color:  #EA591A; }
+.colorir-titulo span:nth-child(3) { color: #C2BB0B; } 
+.colorir-titulo span:nth-child(4) { color:  #9014F2}
+.colorir-titulo span:nth-child(5) { color: #F50D0D; }
+.colorir-titulo span:nth-child(6) { color: #0EBF35;}
+.colorir-titulo span:nth-child(7) { color: #1E70EA; }
+.colorir-titulo span:nth-child(8) { color: #F81590;}  
+.colorir-titulo span:nth-child(9) { color: #59FA0D;}
+.colorir-titulo span:nth-child(10) { color: #1E82DF;}
+.colorir-titulo span:nth-child(11) { color: #FA5622; }
+.colorir-titulo span:nth-child(12) { color: #A11DF2; }
+
+/* Adicione mais regras conforme necessário para mais letras */
+
+#header {
+    margin: 15px 250px  50px;
+    background-color: var(--cor1);
+    padding: 30px;
+    padding-right: 200px;
+    padding-left:150px;
+    border: 1px solid var(--cor5);
+    height: 130px;
+    
+}
+
 h1 {
     font-size: 58px;
     color: #066a75;
     padding: 3px 0 12px 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-align: center;
     padding-bottom: 35px;
@@ -38,6 +98,8 @@ h1:after {
     width: 100%;
     height: 2px;
     margin-top: 10px;
+   
     background: -webkit-linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184,189, 0.8) 20%, rgba(147,184,189,1) 53%,rgba(147,184,189, 0.8) 79%, rgba(147,184,189,0) 100%); 
     background: linear-gradient(left, rgba(147, 184, 189, 0) 0%, rgba(147, 184,189, 0.8) 20%, rgba(147,184,189,1) 53%,rgba(147,184,189, 0.8) 79%, rgba(147,184,189,0) 100%); 
 }
+
