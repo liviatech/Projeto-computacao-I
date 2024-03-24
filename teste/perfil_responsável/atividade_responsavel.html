@@ -38,18 +38,23 @@
 
 <div>   
       <!-- **** MENU **** -->
-     <a href="home_respo.html"><button type="button">Home</button></a>
-
-      <a href="agenda_responsavel.html"><button type="button">Atividades</button></a>
-
-     <a href="ajuda.html"><button type="button">Pontuação</button></a>
-
-     <a href="ajuda.html"><button type="button">GPS</button></a>
-
-     <a href="sobre.html"><button type="button">Sobre </button> </a>
+      <p>resonsável</p>
+      <a href="home_respo.html"><button type="button">Home</button></a>
+ 
+      <a href="atividade_responsavel.html"><button type="button">Atividade Responsável </button> </a>
+ 
+      <a href="pontuacao_responsavel.html"><button type="button">Pontuação </button> </a>
+ 
+      <a href="gps.html"><button type="button">GPS </button> </a>
+  
+      <a href="sobre_responsavel.html"><button type="button">Sobre </button> </a>
+ 
+ 
+ 
+ <button><a href="index.html">Sair</a></button></a>
      
      
-     <a href="ajuda.html"><button type="button">Ajuda</button></a>
+ 
 
 
 </div>
@@ -60,7 +65,48 @@
 
 <div class="agenda">
     <h2>Atividades para os  Pais</h2>
-    <div > <p> pesquisar este espaço para adicionar as terefas</p></div>
+    <div > <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      .complete {
+        text-decoration: line-through;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lista de Tarefas</h2>
+    <ul id="task-list">
+      <li><input type="checkbox" onchange="toggleComplete(this)"> Tarefa 1</li>
+      <li><input type="checkbox" onchange="toggleComplete(this)"> Tarefa 2</li>
+      <li><input type="checkbox" onchange="toggleComplete(this)"> Tarefa 3</li>
+      <li><input type="checkbox" onchange="toggleComplete(this)"> Tarefa 4</li>
+    </ul>
+  
+    <script>
+      function toggleComplete(checkbox) {
+        const listItem = checkbox.parentNode;
+        if (checkbox.checked) {
+          listItem.classList.add('complete');
+        } else {
+          listItem.classList.remove('complete');
+        }
+      }
+    </script></div>
       
   </div>
   
