@@ -1,0 +1,322 @@
+/*igual para todos daqui*/
+* {
+    margin: 0;
+    padding: 0;
+   /* background-color: rgb(241, 234, 237);*/
+    font-family: sans-serif; /*fonte usada*/
+ }
+
+ .logo h1 {
+    
+    font-size: 3rem;/*tamanho da fonte*/
+    text-align: left; /*posição do texto*/
+    font-weight: 400;
+    color: rgb(51, 12, 27);
+    background-color: #f9f7f7;
+ }
+ 
+ .logo h6 {
+    font-family: sans-serif; /*fonte usada*/
+    font-size: 1rem;/*tamanho da fonte*/
+    text-align: left; /*posição do texto*/
+    font-weight: 800;
+    color: rgb(174, 20, 128);
+    background-color: #f9f7f7;
+    height: 2rem;
+ }
+
+ .logo img {
+    height: 1.5rem;
+    background-color: #ccc;
+ }
+
+ 
+.button-menu button {
+    padding: 0 5rem;
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    border: none; /*remover a linha da borda*/
+ }
+
+ /*para o botao ficar grande*/
+[data-anchor="product"] {
+    background-color: rgb(244, 132, 151);
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: none; /*remover a linha da borda*/
+    padding: 0.2rem 1rem;
+    cursor: pointer; /*mudar o cursor ao passar no botao*/
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    text-decoration: none; /*tirar linha de baixo do link*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    padding: 0 2rem;
+    transition: .2s ease-in-out;
+
+    display: block;
+
+}
+[data-anchor="product"]:hover {
+    background-color: rgb(220, 14, 141);
+    color: #fff;
+    transform: scale(1.2);
+    padding: 0 2rem;
+    border: none; /*remover a linha da borda*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+
+.button-menu-1 button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    border: none; /*remover a linha da borda*/
+ }
+
+ /*para o botao ficar grande*/
+[data-anchor="products-1"] {
+    background-color: rgb(244, 132, 151);
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: none; /*remover a linha da borda*/
+    padding: 0.2rem 1rem;
+    cursor: pointer; /*mudar o cursor ao passar no botao*/
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    text-decoration: none; /*tirar linha de baixo do link*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    padding: 0 2rem;
+    transition: .2s ease-in-out;
+
+    display: block;
+
+}
+[data-anchor="products-1"]:hover {
+    background-color: rgb(220, 14, 141);
+    color: #fff;
+    transform: scale(1.2);
+    padding: 0 2rem;
+    border: none; /*remover a linha da borda*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+
+ .button-menu {
+    text-align: center;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+.button-menu-1 {
+    text-align: center;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+
+ /*PRECISA RESOLVER O PROBLEMA DO BOTÃO MENU !! */
+
+ /*ate aquiiiii*/
+
+.container {  
+    width: 80%; /*tamanho do conteiner*/
+    margin: 0 auto;
+    padding: 0 2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:  rgb(244, 132, 151);
+}
+
+.input-group {
+    display: flex;
+    text-align: center; /*posição do texto*/
+}
+ 
+.resp{
+    flex: 1;
+    text-align: center; /*posição do texto*/
+}
+
+.depen {
+    flex: 1;
+    text-align: center; /*posição do texto*/
+
+}
+
+.button-entrar {
+    display: flexbox;
+
+}
+ .title-1 h1{
+    margin-top: 2rem;
+    font-size: 3rem;/*tamanho da fonte*/
+    text-align: center; /*posição do texto*/
+    font-weight: 800;
+    color: black;
+    margin: 0 30% auto; /*deixa no centro*/
+
+ }
+
+ .title {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;/*tamanho da fonte*/
+    text-align: center; /*posição do texto*/
+    font-weight: 400;
+    color: black;
+ }
+
+.title-2 h1{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1rem;/*tamanho da fonte*/
+    text-align: center; /*posição do texto*/
+    font-weight: 400;
+    color: black;
+}
+      
+
+.input-box {
+    text-align: center; /*posição do texto*/
+    margin-top: 0.8rem;
+    /*espaçamento das linhas*/
+    margin-bottom: 0.8rem; /*tamanho do conteiner*/
+}
+
+        
+.input-box label {
+    margin-left: 5rem;
+    text-align: left; /*posição do texto*/
+    /*desing das perguntas*/
+    display: block; 
+    font-size: 1.2rem; /*tamanho da font*/     
+}
+
+
+.input-box input {
+    /*desing caixa de resposta*/
+    width: 80%; /*comprimento da caixa de resposta*/
+    padding: 0.2rem; /*altura da caixa de resposta*/
+    border: 1px solid ; /*tamanho da bordar - tipo de bordar - cor da bordar*/
+    border-radius: 3px; /*curvatura da borda*/ 
+}
+        
+.input-box input[type] {
+    font-family: Arial black, Helvetica, sans-serif;
+    background-color: white; /*cor da barra de resposta*/
+    color: black; /*cor da fonte*/
+    cursor: pointer; /*mudar o cursor*/
+}
+        
+.input-box input[type]:hover {
+    background-color: rgb(245, 206, 230); /*mudar a cor quando passar em cima*/
+}
+
+ /*area de genero*/
+ .input-box-gender {
+    margin-left: 2rem;
+    text-align: left; /*posição do texto*/
+    margin-bottom: 2rem;
+    
+ }
+
+ .gender-e h6 {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    font-size: 2rem;/*tamanho da fonte*/
+    text-align: center; /*posição do texto*/
+    font-weight: 800;
+    color: black;
+
+ }
+
+ .gender-group {
+    margin-left: 3rem;
+    text-align: left; /*posição do texto*/
+    
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*grafico pizza*/
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #ec85a2 0% 60%,
+        #545355 60% 75%,
+        rgb(169, 239, 246) 75% 100%
+        
+    );
+}
+
+.rosa {
+    color: #ec85a2;
+}
+
+.cinza {
+    color: #545355;
+}
+.azul {
+    color:rgb(169, 239, 246) ;
+}
+/*grafico torre*/
+/*.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 300px;
+    height: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    background-color: #0074d9;
+    transition: height 0.5s;
+}
+
+.bar:hover {
+    height: 150px;
+}*/
