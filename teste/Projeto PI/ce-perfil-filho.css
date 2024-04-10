@@ -1,0 +1,126 @@
+/*igual para todos daqui*/
+* {
+   margin: 0;
+   padding: 0;
+  /* background-color: rgb(241, 234, 237);*/
+   font-family: sans-serif; /*fonte usada*/
+}
+
+.logo h1 {
+   
+   font-size: 3rem;/*tamanho da fonte*/
+   text-align: left; /*posição do texto*/
+   font-weight: 400;
+   color: rgb(51, 12, 27);
+   background-color: #f9f7f7;
+}
+
+.logo h6 {
+   font-family: sans-serif; /*fonte usada*/
+   font-size: 1rem;/*tamanho da fonte*/
+   text-align: left; /*posição do texto*/
+   font-weight: 800;
+   color: rgb(174, 20, 128);
+   background-color: #f9f7f7;
+   height: 2rem;
+}
+
+.logo img {
+   height: 1.5rem;
+   background-color: #ccc;
+}
+
+ 
+.button-menu button {
+    padding: 0 4rem;
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    border: none; /*remover a linha da borda*/
+ }
+
+ /*para o botao ficar grande*/
+[data-anchor="product"] {
+    background-color: rgb(231, 145, 191);
+    color: black;
+    font-weight: 900;
+    font-size: 1rem;
+    border: none; /*remover a linha da borda*/
+    padding: 0.2rem 1rem;
+    cursor: pointer; /*mudar o cursor ao passar no botao*/
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    text-decoration: none; /*tirar linha de baixo do link*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    padding: 0 1rem;
+    transition: .2s ease-in-out;
+
+    display: block;
+
+}
+[data-anchor="product"]:hover {
+    background-color: rgb(220, 14, 141);
+    color: #fff;
+    transform: scale(1.2);
+    padding: 0 2rem;
+    border: none; /*remover a linha da borda*/
+    border-radius: 1rem; /*deixar a bordar redonda*/
+}
+
+
+ .button-menu {
+    text-align: center;
+    height: 2rem;
+    margin-top: 0.5rem;
+ }
+
+ 
+
+ /*PRECISA RESOLVER O PROBLEMA DO BOTÃO MENU !! */
+
+
+
+
+
+
+.profile {
+  margin: 2rem;
+}
+
+.profile-picture {
+   text-align: center;
+   margin-bottom: rem;
+}
+
+.adici {
+   text-align: center;
+   margin: 2rem;
+}
+
+#profile-img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+#img-upload {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.upload-label {
+   bottom: 2rem;
+   transform: translateX(-50%);
+   background-color: rgb(231, 145, 191);
+   color: #fff;
+   padding: 0.8rem 2rem;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+.profile-info {
+   text-align: center;
+}
