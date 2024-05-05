@@ -1,0 +1,184 @@
+ /*igual para todos daqui*/
+* {
+    margin: 0;
+    padding: 0;
+   /* background-color: rgb(241, 234, 237);*/
+    font-family: sans-serif, arial; /*fonte usada*/
+ }
+
+ .logo h1 {
+    
+    font-size: 3rem;/*tamanho da fonte*/
+    text-align: left; /*posição do texto*/
+    font-weight: 400;
+    color: rgb(51, 12, 27);
+    background-color: #f9f7f7;
+ }
+ 
+ .logo h6 {
+    font-family: sans-serif; /*fonte usada*/
+    font-size: 1rem;/*tamanho da fonte*/
+    text-align: left; /*posição do texto*/
+    font-weight: 800;
+    color: rgb(174, 20, 128);
+    background-color: #f9f7f7;
+    height: 2rem;
+ }
+ 
+ .logo img {
+    height: 1.5rem;
+    background-color: #ccc;
+ }
+ 
+  
+ .button-menu button {
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 0 0.1rem;
+    border-radius: 1rem; /*deixar a bordar redonda*/
+    border: none; /*remover a linha da borda*/
+  }
+ 
+  /*para o botao ficar grande*/
+ [data-anchor="product"] {
+     background-color: rgb(231, 145, 191);
+     color: black;
+     font-weight: 900;
+     font-size: 1rem;
+     border: none; /*remover a linha da borda*/
+     padding: 0.2rem 1rem;
+     cursor: pointer; /*mudar o cursor ao passar no botao*/
+     margin: auto;
+     width: 100%;
+     text-align: center;
+     text-decoration: none; /*tirar linha de baixo do link*/
+     border-radius: 1rem; /*deixar a bordar redonda*/
+     padding: 0 1rem;
+     transition: .2s ease-in-out;
+ 
+     display: block;
+ 
+ }
+ [data-anchor="product"]:hover {
+     background-color: rgb(220, 14, 141);
+     color: #fff;
+     transform: scale(1.2);
+     padding: 0 2rem;
+     border: none; /*remover a linha da borda*/
+     border-radius: 1rem; /*deixar a bordar redonda*/
+ }
+ 
+ 
+  .button-menu {
+     text-align: center;
+     height: 2rem;
+     margin-top: 0.5rem;
+  }
+ 
+  
+ 
+  /*PRECISA RESOLVER O PROBLEMA DO BOTÃO MENU !! */
+
+  .agenda h2 {
+    margin-left: 40%;
+    font-size: 3rem;
+    color: rgb(220, 14, 141);
+    
+  }
+
+  .agenda h3 {
+    color: rgb(220, 14, 141);
+    font-size: 2rem;
+  }
+
+  .container {
+    display: flex;
+
+  }
+
+  .calendario {
+    flex: 1;
+
+  }
+
+  .botao-adicionar {
+    flex: 1;
+  }
+
+
+  
+
+
+  .calendar {
+    margin: 1rem;
+    padding: 1 5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.month {
+    text-align: center;
+    
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+    background-color: rgb(231, 145, 191);
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+     
+.input-box label {
+      
+}
+
+
+.button-menu input {
+    border-radius: 1rem;
+} 
+
+.other-month {
+    color: #ccc;
+}
+
+
+/*agenda filhos*/
+
+.agenda-filhos {
+  margin: 2rem 5rem 5rem 5rem;
+  background-color: red;
+}
+
+.agenda-filhos button {
+  padding: 0 2rem;
+  border-radius: 1rem; /*deixar a bordar redonda*/
+  border: none; /*remover a linha da borda*/
+}
+.button-menu {
+  text-align: center;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
