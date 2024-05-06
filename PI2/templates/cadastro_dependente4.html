@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="HTML, CSS"/>    
+        <!--uso de palavras chaves-->    
+        <meta name="description" content="Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão"/> <!--descrição so site-->   
+        <meta name="author" content="ANTONIO LUIZ XAVIER DA COSTA, CLESIO JOSE DA SILVA CLEMENTE,LARISSA CELESTINO FERRAZ, LIVIA MATIAS DA SILVA, MIRIÃ DA SILVA RIBEIRO, SAMANTA DOS SANTOS BISPO, SARA MOTA SILVA"> 
+        <title>TÁ NA HORA...</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="cadastro3.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro_dependente4.css') }}">
+    </head>
+    <body>
+        <!-- *** CABEÇALHO ***-->
+        <div class="logo">
+            <h1> Tá na H
+                <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado.">
+                ra... 
+            </h1>
+            <h6> Uma forma DIVERTIDA de Interação em Família </h6>
+        </div>
+        <!-- *** MENU *** -->
+        <div class="menu">
+            <div class="button-menu">
+                <button><a data-anchor="product" href='/home'> Home </a></button>
+               <button><a data-anchor="product" href='/login'> Login </a></button> 
+                <button><a data-anchor="product" href='/cadastro'> Cadastro </a></button> 
+                <button><a data-anchor="product" href="d-home-sobre.html"> Suporte </a></button>
+            </div>
+        </div>
+        <div class="title-1">
+            <h1> Cadastro do Dependente</h1>
+        </div>  
+        <!-- cadastro preencher -->
+        <div class="container">
+            <form id="formulario2" method="post">
+                <div class="input-group">
+                    <div class="resp">
+                        <div class="title">
+                            <h1> Dados do Dependente</h1>
+                        </div>
+                            <input type="hidden" id="resp_id"  name="resp_id" value="{{ resp_id }}"> 
+                        <div class="input-box">
+                            <label for="firstname">Primeiro Nome</label>     
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome." required>
+                        </div>
+                        <div class="input-box">
+                            <label for="lastname"> Sobrenome:</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome." required>
+                        </div>
+                        <div class="input-box">
+                            <label for="nick"> Como você prefere ser chamado:</label>
+                            <input id="nick" type="text" name="nick" placeholder="Digite seu sobrenome." required>
+                        </div>
+                        <div class="input-box">
+                            <label for="date">data de nascimento:</label>
+                            <input id="date" type="date" name="date" placeholder="12/03/1999" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email"> E-mail:</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
+                        </div>
+                        <div class="input-box">
+                            <label for="telefone"> Celular:</label>
+                            <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx " required>
+                        </div>
+                      
+                        <div class="input-box">
+                            <label for="password"> Senha:</label>
+                            <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
+                        </div>
+                        <div class="input-box">
+                            <label for="genero"> Gênero:</label>
+                            <input id="genero" type="text" name="genero" placeholder="Digite. " required>
+                        </div><br>   
+                                <button type="submit">Enviar</button> <br><br>                   
+                       
+                        <!-- cadastro bolinha
+                        <div class="input-box-gender">
+                            <div class="gender-e">
+                                <h6> Gênero </h6>
+                            </div>
+                            <div class="gender-group">
+                                <div class=" gender-input">
+                                    <input type= "radio" id="female" name="gender">
+                                    <label for="female">Feminino</label>
+                                </div>
+                                <div class=" gender-input">
+                                    <input type= "radio" id="male" name="gender">
+                                   <label for="male"> Masculino </label>
+                                </div>
+                                <div class=" gender-input">
+                                    <input type= "radio" id="others" name="gender">
+                                    <label for="others"> Outros</label>
+                                </div>
+                                <div class=" gender-input">
+                                    <input type= "radio" id="name" name="gender">
+                                    <label for="name">Prefiro não dizer</label>
+                                </div> 
+                            </div>
+                        </div>
+                    </div> -->
+            </form>       
+        <div class="button-menu">
+            <button><a data-anchor="product" href="cadastro_dependente4.html"> Cadastro do Dependente </a></button>
+        </div>
+
+        <footer>
+
+        <script>
+        document.getElementById("formulario2").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var nome = document.getElementById("firstname").value;
+            var sobrenome = document.getElementById("lastname").value;
+            var nick = document.getElementById("nick").value;
+            var datanascimento = document.getElementById("date").value;
+            var telefone = document.getElementById("telefone").value;
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("password").value;
+            var genero = document.getElementById("genero").value;
+            var resp_id = document.getElementById("resp_id").value;
+
+            fetch('/dados-dependente', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    nome: nome,
+                    sobrenome: sobrenome,
+                    nick: nick,
+                    datanascimento: datanascimento,
+                    telefone: telefone,
+                    email: email,
+                    senha: senha,
+                    genero: genero,
+                    resp_id: resp_id,
+                    
+                }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("Formulário Enviado com Sucesso!");
+                    window.location.href = '/home_resp';
+                } else {
+                    alert("Erro ao enviar o formulário");
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+        });
+
+        function preencherInfoUsuario() {
+            var usuarioId = new URLSearchParams(window.location.search).get('resp_id');
+            if (usuarioId) {
+                document.getElementById('info-usuario').innerText = 'ID do Usuário: ' + usuarioId;
+            }
+        }
+
+        preencherInfoUsuario();
+    </script>                     
+            <p>&copy;Projeto Integrador em Computação I - Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão.</p>
+           </footer>           
+    </body>
+</html>
+    

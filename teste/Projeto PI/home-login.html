@@ -13,27 +13,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="ac-home-login.css">
+        <link rel="stylesheet" href="home-login.css">
     </head>
     <body>
         <!-- *** CABEÇALHO ***-->
-        <div class="logo">
-            <h1> Tá na H
-                <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado.">
-                ra... 
-            </h1>
-            <h6> Uma forma DIVERTIDA de Interação em Família
-            </h6>
-        </div>
-        <!-- *** MENU *** -->
-        <div class="menu">
-            <div class="button-menu">
-                <button><a data-anchor="product" href="a-home-home.html"> Home </a></button>
-                <button><a data-anchor="product" href="b-home-cadastro.html"> Cadastra-se </a></button> 
-                <button><a data-anchor="product" href="c-home-login.html"> Login </a></button> 
-                <button><a data-anchor="product" href="d-home-sobre.html"> Suporte </a></button>
+        <header>
+            <div class="logo">
+                <h1> Tá na H
+                    <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado.">
+                    ra... 
+                </h1>
+                <h6> Uma forma DIVERTIDA de Interação em Família </h6>
             </div>
-        </div>
+            <!-- *** MENU *** -->
+            <div class="menu">
+                <div class="button-menu">
+                    <button><a data-anchor="product" href="home-page.html"> Home </a></button>
+                    <button><a data-anchor="product" href="home-cadastro.html"> Cadastra-se </a></button> 
+                    <button><a data-anchor="product" href="home-login.html"> Login </a></button> 
+                    <button><a data-anchor="product" href="home-sobre.html"> Suporte </a></button>
+                </div>
+            </div>
+        </header>
         <hr>
         <!-- LOGIN -->
         <div class="container">
@@ -43,57 +44,74 @@
                 </div>
                 <div class="login">
                     <form action="form">
-                        <div class="login-resp">
-                            <div class="title">
-                                <h1> Login para o responsável </h1>
-                            </div>
-            
-                            <div class="input-group">
-                                <div class="input-box">
-                                    <label for="email"> E-mail:</label>
-                                    <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
-                                </div> 
-                                <div class="input-box">
-                                    <label for="password"> Senha:</label>
-                                    <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
-                                </div>
-                            </div>
-                            <div class="continue-button">
-                                <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
-                                <label for="manterlogado"> Manter-me logado </label>
-                            </div>    
+                        <div class="title">
+                            <h1> Login para o responsável </h1>
                         </div>
-                    </form>
-                    <div class="button-menu-1">
-                        <button><a data-anchor="products-1" href="e-home-resp.html"> Entrar </a></button>
+                        <div class="input-group-1">
+                            <div class="input-box">
+                                <label for="email"> E-mail:</label>
+                                <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
+                            </div> 
+                            <div class="input-box">
+                                <label for="password"> Senha:</label>                                    <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
+                            </div>
+                        </div>
+                        <div class="continue-button">
+                            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                            <label for="manterlogado"> Manter-me logado </label>
+                        </div>   
+                        <div class="enviar">
+                            <input type="submit" >
+                        </div>
+                         
                     </div>
-                    <hr>
-                    <form action="form">
-                        <div class="login-depen">
-                            <div class="title">
-                                <h1> Login para os filhos </h1>
-                            </div>
-                            <div class="input-group">
-                                <div class="input-box">
-                                    <label for="email"> E-mail:</label>
-                                    <input id="email" type="email" name="email"   placeholder="Digite seu E-mail." required>
-                                </div>
-                                <div class="input-box">
-                                    <label for="password"> Senha:</label>
-                                    <input id="password" type="password" name="password" placeholder="Digite sua senha. " required>
-                                </div>
-                            </div>
-                            <div class="continue-button">
-                                <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
-                                <label for="manterlogado"> Manter-me logado </label>
-                            </div>
-                        </div>
-                    </form> 
-                    <div class="button-menu-1">
-                        <button><a data-anchor="products-1"  href="k-home-depen.html"> Entrar </a></button>
-                    </div> 
-                </div>    
+                </form>
+                
             </div>    
-        </div>
+        </div>  
+        <footer>
+            <div class="container-footer">
+                <div class="row-footer">
+                    <!-- footer col-->
+                    <div class="footer-col">
+                        <h4>Tá na Hora...</h4>
+                        <ul>
+                            <li><a href="ad-home-sobre.html"> Quem somos </a></li>
+                            <li><a href="#"> política de privacidade </a></li>
+                        </ul>
+                    </div>
+                    <!--end footer col-->
+                    <!-- footer col-->
+                    <div class="footer-col">
+                        <h4>Obter ajuda</h4>
+                        <ul>
+                            <li><a href="ad-home-sobre.html">Duvidas</a></li>
+                        </ul>
+                    </div>
+                    <!--end footer col-->
+                    <!-- footer col-->
+                    <div class="footer-col">
+                        <h4>Se subescreva!</h4>
+                        <div class="medias-socias">
+                            <a href="https://pt-br.facebook.com/login/""> <i class="fa fa-facebook"></i> f</a>
+
+                            <a href="https://www.instagram.com/?hl=en"> <i class="fa fa-instagram"></i> I </a>
+
+                            <a href="https://web.whatsapp.com/"> <i class="fa fa-whatsapp"></i> W </a>
+
+                            <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                        </div>
+    
+                    </div>
+                    <!--end footer col-->
+                    <div class="final">
+                        <h1> &copy;Projeto Integrador em Computação I </h1>
+                        <p> &copy;Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
     </body>
+    
 </html>

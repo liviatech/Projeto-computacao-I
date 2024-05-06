@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="keywords" content="HTML, CSS"/>    
+        <!--uso de palavras chaves-->    
+        <meta name="description" content="Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão"/> <!--descrição so site-->   
+        <meta name="author" content="ANTONIO LUIZ XAVIER DA COSTA, CLESIO JOSE DA SILVA CLEMENTE,LARISSA CELESTINO FERRAZ, LIVIA MATIAS DA SILVA, MIRIÃ DA SILVA RIBEIRO, SAMANTA DOS SANTOS BISPO, SARA MOTA SILVA"> 
+        <title>TÁ NA HORA...</title>
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="login2.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login2.css') }}">
+    </head>
+    <body>
+        <!-- *** CABEÇALHO ***-->
+        <div class="logo">
+            <h1> Tá na H
+                <img src="https://th.bing.com/th?id=OIP.43RqL_WAgNNGE5JmdBEtyAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Relogio Animado.">
+                ra... 
+            </h1>
+            <h6> Uma forma DIVERTIDA de Interação em Família
+            </h6>
+        </div>
+        <!-- *** MENU *** -->
+        <div class="menu">
+            <div class="button-menu">
+                <button><a data-anchor="product" href='/home'> Home </a></button>
+                 <button><a data-anchor="product" href='/login'> Login </a></button> 
+                 <button><a data-anchor="product" href='/cadastro'> Cadastra-se </a></button> 
+                <button><a data-anchor="product" href="d-home-sobre.html"> Suporte </a></button>
+            </div>
+        </div>
+        <hr>
+        <!-- LOGIN -->
+       <img src="" alt="Familia conectada">
+       <hr>
+       <hr>
+        <hr>
+       <hr>
+
+                   <h1> Login  </h1>
+                    
+                    <form id="loginForm" method="post">
+                            <div class="input-group">
+                                <div class="input-box">
+                                    <label for="email"> E-mail:</label>
+                                    <input id="email" type="email" name="email" placeholder="Digite seu E-mail." required>
+                                </div> 
+                                <div class="input-box">
+                                    <label for="password"> Senha:</label>
+                                    <input id="password" type="password" name="password" placeholder="Digite sua senha. " required><button type="submit">Logar</button>
+                                </div>
+                            </div>
+                    </form>
+                    
+                    
+        <footer>
+            <p>&copy;Projeto Integrador em Computação I - Desenvolvimento de um software com framework web que utilize noções de banco de dados, praticando controle de versão.</p>
+        </footer>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var login = document.getElementById("email").value;
+            var senha = document.getElementById("password").value;
+                        
+            // Enviar os dados de login para a API Flask via POST
+            fetch('/verificar-login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ login: login, 
+                                       senha: senha})
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Se o login for bem-sucedido, redirecionar para a próxima página
+                    window.location.href = '/home_resp';
+                } else {
+                    // Se o login falhar, exibir mensagem de erro
+                    alert("Login inválido");
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+        });
+    </script>
+                                
+    </body>
+</html>
